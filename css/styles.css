@@ -15,6 +15,10 @@
   --filter-btn-color: #f5f4fa;
   --header-underline-color: #ececec;
   --card-border-color: #eee;
+/* icons */
+  --s-icons-color:#AFB1B8;
+  --active-s-icon-color: #fff;
+
 }
 /* Скидання стилів */
 h1,
@@ -243,7 +247,7 @@ body {
 .team {
   background-color: var(--team-bg-color);
 }
-.team .container .list {
+.team .container>.list {
   display: flex;
   margin-top: 50px;
   gap: 30px;
@@ -274,6 +278,36 @@ body {
   font-size: 16px;
   line-height: calc(19 / 16);
 }
+/* блок посиланнь на соц мережі*/
+.social-links.list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 10px;
+  }
+  /* посилання в картці команди*/
+.team-s-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--s-icons-color);
+}
+  /* іконки в картці команди*/
+.team .s-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.social-links .link:hover,
+.social-links .link:focus {
+  background-color: var(--accent-color);
+  color: var(--active-s-icon-color);
+  }
 /* футер */
 .page-bottom {
   padding: 60px 0;
