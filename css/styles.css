@@ -368,6 +368,7 @@ body {
 /* логотип у посиланні */
 .customer-logo {
   fill: currentColor;
+  height: 60px;
 }
 .customer-link:hover,
 .customer-link:focus {
